@@ -1,0 +1,3 @@
+Ivanov; Ivan; Ivanovich; male; Russian; 180; 75; 1995; 10; 15; +79111234567; 101000, Russia, Moscow, Tverskaya, 1, 10
+Petrov; Petr; Petrovich; male; Russian; 175; 70; 2005; 05; 20; +79221234567; 190000, Russia, Saint-Petersburg, Nevsky, 10, 5
+Sidorov; Alex; Alexandrovich; male; Russian; 160; 50; 2010; 01; 01; +79331234567; 630000, Russia, Novosibirsk, Lenina, 5, 12

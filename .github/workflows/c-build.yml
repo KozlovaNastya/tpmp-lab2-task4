@@ -1,0 +1,39 @@
+name: C Project Build and Test
+
+on: [push, pull_request]
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Compile project
+      run: |
+
+        make
+
+    - name: Create Test Data
+      run: |
+
+        echo "Ivanov; Ivan; Ivanovich; male; Russian; 180; 75; 1995; 10; 15; +7911; Address1" > input_simple.txt
+        echo "Petrov; Petr; Petrovich; male; Russian; 175; 70; 2005; 05; 20; +7922; Address2" >> input_simple.txt
+        echo "Sidorov; Alex; Alexandrovich; male; Russian; 160; 50; 2010; 01; 01; +7933; Address3" >> input_simple.txt
+
+
+        echo "Kozlova; Anastasia; Sergeevna; female; Russian; 165; 55; 2008; 03; 10; +7944; Address4" > input_edge.txt
+        echo "Smirnova; Maria; Igorevna; female; Russian; 170; 60; 2008; 03; 15; +7955; Address5" >> input_edge.txt
+        echo "Volkov; Dmitry; Olegovich; male; Russian; 185; 80; 2008; 01; 20; +7966; Address6" >> input_edge.txt
+
+    - name: Run Test 1 (Simple)
+      run: |
+        echo ">>> Running Simple Test..."
+        ./program input_simple.txt
+
+    - name: Run Test 2 (Edge Case)
+      run: |
+        echo ">>> Running Edge Case Test..."
+        ./program input_edge.txt
+

@@ -1,0 +1,3 @@
+Kozlova; Anastasia; Sergeevna; female; Russian; 165; 55; 2008; 03; 10; +79441234567; 123456, Russia, Kazan, Mira, 2, 45
+Smirnova; Maria; Igorevna; female; Russian; 170; 60; 2008; 03; 15; +79551234567; 654321, Russia, Ekaterinburg, Parkovaya, 8, 3
+Volkov; Dmitry; Olegovich; male; Russian; 185; 80; 2008; 01; 20; +79661234567; 111222, Russia, Sochi, Kurortny, 15, 1
