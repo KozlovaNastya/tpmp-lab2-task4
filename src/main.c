@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "person.h"
-#include "processing.h"
 
 int main(int argc, char *argv[]) {
 
